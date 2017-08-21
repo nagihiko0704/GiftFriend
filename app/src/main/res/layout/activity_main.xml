@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.rudolphriding.giftfriend.Main">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="main view"/>
+
+    <LinearLayout
+        android:id="@+id/dockbar_main"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:weightSum="3"
+        android:background="@drawable/dockbox">
+
+        <RelativeLayout
+            android:id="@+id/dockbar_main_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:text="Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dockbar_main_main"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:onClick="MaintoMain"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/dockbar_main_mid"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:text="Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dockbar_main_trend"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:onClick="MaintoTrend"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/dockbar_main_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:text="Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dockbar_main_search"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:onClick="MaintoSearch"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
