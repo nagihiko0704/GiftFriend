@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <!-- category name -->
+
+    <TextView
+        android:id="@+id/category_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft ="20dp"
+        android:text="Category"
+        android:textSize="17sp">
+
+    </TextView>
+
+    <!-- button container -->
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_height="2dp"
+            android:layout_width="match_parent"
+            android:background="@color/ut_std_bgline_gray_01"/>
+
+        <TableRow>
+
+            <com.rudolphriding.giftfriend.SquareButton
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:focusableInTouchMode="true"
+                android:background="@drawable/category_background_selector"/>
+
+            <com.rudolphriding.giftfriend.SquareButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/category_background_selector"
+                android:focusableInTouchMode="true"/>
+
+            <com.rudolphriding.giftfriend.SquareButton
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:focusableInTouchMode="true"
+                android:background="@drawable/category_background_selector"/>
+
+            <com.rudolphriding.giftfriend.SquareButton
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:focusableInTouchMode="true"
+                android:background="@drawable/category_background_selector"/>
+        </TableRow>
+
+        <TableRow>
+            <com.rudolphriding.giftfriend.SquareButton
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:focusableInTouchMode="true"
+                android:background="@drawable/category_background_selector"/>
+
+            <com.rudolphriding.giftfriend.SquareButton
+                android:id="@+id/squareButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/category_background_selector"
+                android:focusableInTouchMode="true"/>
+
+            <com.rudolphriding.giftfriend.SquareButton
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:focusableInTouchMode="true"
+                android:background="@drawable/category_background_selector"/>
+
+            <com.rudolphriding.giftfriend.SquareButton
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:focusableInTouchMode="true"
+                android:background="@drawable/category_background_selector"/>
+
+        </TableRow>
+
+        <View
+            android:layout_height="2dp"
+            android:layout_width="match_parent"
+            android:background="@color/ut_std_bgline_gray_01"/>
+
+    </TableLayout>
+
+
+
+</LinearLayout>

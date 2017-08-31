@@ -13,13 +13,16 @@
         android:layout_height="wrap_content"
         android:text="main view"/>
 
+
+    <!-- dockbar -->
+
     <LinearLayout
         android:id="@+id/dockbar_main"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_alignParentBottom="true"
-        android:weightSum="3"
-        android:background="@drawable/dockbox">
+        android:weightSum="3">
+
 
         <RelativeLayout
             android:id="@+id/dockbar_main_left"
@@ -71,5 +74,28 @@
 
 
     </LinearLayout>
+
+    <!-- dockbar line -->
+
+    <LinearLayout
+        android:id="@+id/dockbar_line_main"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/ut_std_bgline_gray_01"
+        android:layout_above="@id/dockbar_main">
+
+    </LinearLayout>
+
+    <!-- dockbar shadow -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_above="@id/dockbar_line_main"
+        android:background="@drawable/shadow">
+
+    </LinearLayout>
+
 
 </RelativeLayout>

@@ -12,13 +12,14 @@
         android:layout_height="wrap_content"
         android:text="search view"/>
 
+    <!-- dockbar -->
+
     <LinearLayout
         android:id="@+id/dockbar_search"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_alignParentBottom="true"
-        android:weightSum="3"
-        android:background="@drawable/dockbox">
+        android:weightSum="3">
 
         <RelativeLayout
             android:id="@+id/dockbar_search_left"
@@ -68,6 +69,28 @@
                 android:onClick="SearchtoSearch"/>
         </RelativeLayout>
 
+
+    </LinearLayout>
+
+    <!-- dockbar line -->
+
+    <LinearLayout
+        android:id="@+id/dockbar_line_search"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/ut_std_bgline_gray_01"
+        android:layout_above="@id/dockbar_search">
+
+    </LinearLayout>
+
+    <!-- dockbar shadow -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:layout_above="@id/dockbar_line_search"
+        android:background="@drawable/shadow">
 
     </LinearLayout>
 

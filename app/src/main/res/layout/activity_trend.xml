@@ -7,18 +7,14 @@
     android:layout_height="match_parent"
     tools:context="com.rudolphriding.giftfriend.Trend">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="trend view"/>
+    <!-- dockbar -->
 
     <LinearLayout
         android:id="@+id/dockbar_trend"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_alignParentBottom="true"
-        android:weightSum="3"
-        android:background="@drawable/dockbox">
+        android:weightSum="3">
 
         <RelativeLayout
             android:id="@+id/dockbar_trend_left"
@@ -68,6 +64,40 @@
                 android:onClick="TrendtoSearch"/>
         </RelativeLayout>
 
+
+    </LinearLayout>
+
+    <!-- dockbar line -->
+
+    <LinearLayout
+        android:id="@+id/dockbar_line_trend"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/ut_std_bgline_gray_01"
+        android:layout_above="@id/dockbar_trend">
+
+    </LinearLayout>
+
+    <!-- dockbar shadow -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:layout_above="@id/dockbar_line_trend"
+        android:background="@drawable/shadow">
+
+    </LinearLayout>
+
+    <!-- category container -->
+
+    <LinearLayout
+        android:id="@+id/category_container"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/dockbar_line_trend">
 
     </LinearLayout>
 
