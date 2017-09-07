@@ -8,7 +8,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.LinearLayout;
 
-public class Trend extends AppCompatActivity
+import com.tsengvn.typekit.TypekitContextWrapper;
+
+public class Trend extends ApplicationBase
 {
     LinearLayout categoryContainer;
 

@@ -1,13 +1,15 @@
 package com.rudolphriding.giftfriend;
 
+import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class Search extends AppCompatActivity
-{
+import com.tsengvn.typekit.TypekitContextWrapper;
 
+public class Search extends ApplicationBase
+{
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {

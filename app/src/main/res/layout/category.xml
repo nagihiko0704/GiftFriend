@@ -8,12 +8,12 @@
 
     <TextView
         android:id="@+id/category_name"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
-        android:paddingLeft ="20dp"
-        android:text="Category"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="4dp"
+        android:padding="0dp"
+        android:text="카테고리"
         android:textSize="17sp">
 
     </TextView>
@@ -22,11 +22,14 @@
 
     <TableLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:padding="0dp">
 
         <View
             android:layout_height="2dp"
             android:layout_width="match_parent"
+            android:padding="0dp"
             android:background="@color/ut_std_bgline_gray_01"/>
 
         <TableRow>
