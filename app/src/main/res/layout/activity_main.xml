@@ -9,10 +9,15 @@
 
     tools:context="com.rudolphriding.giftfriend.Main">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/activity_main_container"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="main view"/>
+        android:orientation="horizontal"
+        android:layout_above="@+id/dockbar_main"
+        android:layout_alignParentTop="true">
+
+    </LinearLayout>
 
 
     <!-- dockbar -->

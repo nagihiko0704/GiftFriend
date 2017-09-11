@@ -2,11 +2,17 @@ package com.rudolphriding.giftfriend;
 
 import android.content.Context;
 import android.content.Intent;
+import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 
 import com.tsengvn.typekit.TypekitContextWrapper;
+
+/*
 
 public class Search extends ApplicationBase
 {
@@ -16,24 +22,16 @@ public class Search extends ApplicationBase
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search);
     }
+}
+*/
 
-    //update search
-    public void SearchtoSearch(View view)
+public class Search extends Fragment
+{
+    @Nullable
+    @Override
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState)
     {
-
-    }
-
-    //change activity search to main
-    public void SearchtoMain(View view)
-    {
-        Intent stom = new Intent(Search.this, Main.class);
-        startActivity(stom);
-    }
-
-    //change activity search to trend
-    public void SearchtoTrend(View view)
-    {
-        Intent stot = new Intent(Search.this, Trend.class);
-        startActivity(stot);
+        View sView = inflater.inflate(R.layout.activity_search, null);
+        return sView;
     }
 }

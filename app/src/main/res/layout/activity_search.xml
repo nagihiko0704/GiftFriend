@@ -7,91 +7,11 @@
     android:layout_height="match_parent"
     tools:context="com.rudolphriding.giftfriend.Search">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <fragment
+        android:name="com.rudolphriding.giftfriend.Category"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/app_name_ko"/>
+        />
 
-    <!-- dockbar -->
-
-    <LinearLayout
-        android:id="@+id/dockbar_search"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_alignParentBottom="true"
-        android:weightSum="3">
-
-        <RelativeLayout
-            android:id="@+id/dockbar_search_left"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-
-            <Button
-                android:text="Button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/dockbar_search_main"
-                android:layout_centerVertical="true"
-                android:layout_centerHorizontal="true"
-                android:onClick="SearchtoMain"/>
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/dockbar_search_mid"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-
-            <Button
-                android:text="Button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/dockbar_trend_trend"
-                android:layout_centerVertical="true"
-                android:layout_centerHorizontal="true"
-                android:onClick="SearchtoTrend"/>
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/dockbar_search_right"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-
-            <Button
-                android:text="Button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/dockbar_search_search"
-                android:layout_centerVertical="true"
-                android:layout_centerHorizontal="true"
-                android:onClick="SearchtoSearch"/>
-        </RelativeLayout>
-
-
-    </LinearLayout>
-
-    <!-- dockbar line -->
-
-    <LinearLayout
-        android:id="@+id/dockbar_line_search"
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/ut_std_bgline_gray_01"
-        android:layout_above="@id/dockbar_search">
-
-    </LinearLayout>
-
-    <!-- dockbar shadow -->
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="4dp"
-        android:layout_above="@id/dockbar_line_search"
-        android:background="@drawable/shadow">
-
-    </LinearLayout>
 
 </RelativeLayout>

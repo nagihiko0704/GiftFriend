@@ -7,99 +7,16 @@
     android:layout_height="match_parent"
     tools:context="com.rudolphriding.giftfriend.Trend">
 
-    <!-- dockbar -->
-
-    <LinearLayout
-        android:id="@+id/dockbar_trend"
+    <fragment
+        android:name="com.rudolphriding.giftfriend.Category"
+        android:id="@+id/fragment"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_alignParentBottom="true"
-        android:weightSum="3">
+        android:layout_height="wrap_content"/>
 
-        <RelativeLayout
-            android:id="@+id/dockbar_trend_left"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-
-            <Button
-                android:text="Button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/dockbar_trend_main"
-                android:layout_centerVertical="true"
-                android:layout_centerHorizontal="true"
-                android:onClick="TrendtoMain"/>
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/dockbar_trend_mid"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-
-            <Button
-                android:text="Button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/dockbar_trend_trend"
-                android:layout_centerVertical="true"
-                android:layout_centerHorizontal="true"
-                android:onClick="TrendtoTrend"/>
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/dockbar_trend_right"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-
-            <Button
-                android:text="Button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/dockbar_trend_search"
-                android:layout_centerVertical="true"
-                android:layout_centerHorizontal="true"
-                android:onClick="TrendtoSearch"/>
-        </RelativeLayout>
-
-
-    </LinearLayout>
-
-    <!-- dockbar line -->
-
-    <LinearLayout
-        android:id="@+id/dockbar_line_trend"
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/ut_std_bgline_gray_01"
-        android:layout_above="@id/dockbar_trend">
-
-    </LinearLayout>
-
-    <!-- dockbar shadow -->
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="4dp"
-        android:layout_above="@id/dockbar_line_trend"
-        android:background="@drawable/shadow">
-
-    </LinearLayout>
-
-    <!-- category container -->
-
-    <LinearLayout
-        android:id="@+id/category_container"
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
-        android:layout_above="@+id/dockbar_line_trend">
-
-    </LinearLayout>
-
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="trend view"
+        android:layout_below="@id/fragment"/>
 
 </RelativeLayout>

@@ -25,12 +25,53 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="GIFT CATEGORY"
                 android:layout_centerVertical="true"
+                android:text="GIFT CATEGORY"
                 android:textSize="18sp"/>
 
         </RelativeLayout>
 
     </LinearLayout>
+
+    <com.rudolphriding.giftfriend.SquareImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ut_std_main_mint_01">
+    </com.rudolphriding.giftfriend.SquareImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+
+        <com.rudolphriding.giftfriend.SquareButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="a"/>
+
+        <com.rudolphriding.giftfriend.SquareButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="b"/>
+
+        <com.rudolphriding.giftfriend.SquareButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="c"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SCENARIO NAME"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="scenario text "
+        android:textSize="18sp"/>
 
 </LinearLayout>
