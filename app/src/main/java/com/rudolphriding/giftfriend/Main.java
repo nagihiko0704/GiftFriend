@@ -1,20 +1,11 @@
 package com.rudolphriding.giftfriend;
 
-import android.content.Context;
-import android.content.Intent;
-import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutCompat;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
-
-import com.tsengvn.typekit.Typekit;
-import com.tsengvn.typekit.TypekitContextWrapper;
+import android.widget.ScrollView;
 
 public class Main extends ApplicationBase
 {
@@ -22,7 +13,7 @@ public class Main extends ApplicationBase
     private final int TREND_FRAGMENT = 2;
     private final int SEARCH_FRAGMENT = 3;
 
-    LinearLayout container;
+    ScrollView container;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -33,7 +24,7 @@ public class Main extends ApplicationBase
         //view custom action bar
         customActionbar();
 
-        container = (LinearLayout) findViewById(R.id.activity_main_container);
+        container = (ScrollView) findViewById(R.id.activity_main_container);
 
         //initialize first view as home
         callFragment(1);
@@ -43,26 +34,26 @@ public class Main extends ApplicationBase
     {
         getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
         getSupportActionBar().setDisplayShowCustomEnabled(true);
-        getSupportActionBar().setCustomView(R.layout.main_actionbar);
+        getSupportActionBar().setCustomView(R.layout.item_main_actionbar);
     }
 
 
     //update main
     public void MaintoMain(View view)
     {
-        callFragment(1);
+        callFragment(HOME_FRAGMENT);
     }
 
     //change activity main to trend
     public void MaintoTrend(View view)
     {
-        callFragment(2);
+        callFragment(TREND_FRAGMENT);
     }
 
     //change activity main to search
     public void MaintoSearch(View view)
     {
-        callFragment(3);
+        callFragment(SEARCH_FRAGMENT);
     }
 
     private void callFragment(int fragmentNum)
@@ -72,7 +63,7 @@ public class Main extends ApplicationBase
         switch (fragmentNum)
         {
             case 1:
-                GiftView homeFragment = new GiftView();
+                Home homeFragment = new Home();
                 transaction.replace(R.id.activity_main_container, homeFragment);
                 transaction.commit();
                 break;

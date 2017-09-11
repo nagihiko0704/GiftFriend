@@ -24,7 +24,7 @@
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="20dp"
                 android:layout_centerVertical="true"
                 android:text="GIFT CATEGORY"
                 android:textSize="18sp"/>

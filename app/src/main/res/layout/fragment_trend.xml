@@ -7,16 +7,21 @@
     android:layout_height="match_parent"
     tools:context="com.rudolphriding.giftfriend.Trend">
 
-    <fragment
-        android:name="com.rudolphriding.giftfriend.Category"
-        android:id="@+id/fragment"
-        android:layout_width="match_parent"
+    <include
+        layout="@layout/item_category"
+        android:id="@+id/category_category"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
-    <TextView
+    <include
+        layout="@layout/item_category"
+        android:id="@+id/category_function"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="trend view"
-        android:layout_below="@id/fragment"/>
+        android:layout_below="@+id/category_category"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+
 
 </RelativeLayout>

@@ -7,10 +7,7 @@
     android:layout_height="match_parent"
     tools:context="com.rudolphriding.giftfriend.Search">
 
-    <fragment
-        android:name="com.rudolphriding.giftfriend.Category"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+    <include layout ="@layout/item_category"
         />
 
 
