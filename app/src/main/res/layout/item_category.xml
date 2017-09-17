@@ -39,12 +39,16 @@
                 android:layout_width="wrap_content"
                 android:layout_weight="1"
                 android:focusableInTouchMode="true"
+                android:text="선택1"
+                android:textColor="@color/ut_std_text_gray_02"
                 android:background="@drawable/category_background_selector"/>
 
             <com.rudolphriding.giftfriend.SquareButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:text="선택2"
+                android:textColor="@color/ut_std_text_gray_02"
                 android:background="@drawable/category_background_selector"
                 android:focusableInTouchMode="true"/>
 
@@ -53,6 +57,8 @@
                 android:layout_width="wrap_content"
                 android:layout_weight="1"
                 android:focusableInTouchMode="true"
+                android:text="선택3"
+                android:textColor="@color/ut_std_text_gray_02"
                 android:background="@drawable/category_background_selector"/>
 
             <com.rudolphriding.giftfriend.SquareButton
@@ -60,6 +66,8 @@
                 android:layout_width="wrap_content"
                 android:layout_weight="1"
                 android:focusableInTouchMode="true"
+                android:text="선택4"
+                android:textColor="@color/ut_std_text_gray_02"
                 android:background="@drawable/category_background_selector"/>
         </TableRow>
 
@@ -69,6 +77,8 @@
                 android:layout_width="wrap_content"
                 android:layout_weight="1"
                 android:focusableInTouchMode="true"
+                android:text="선택5"
+                android:textColor="@color/ut_std_text_gray_02"
                 android:background="@drawable/category_background_selector"/>
 
             <com.rudolphriding.giftfriend.SquareButton
@@ -76,6 +86,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:text="선택6"
+                android:textColor="@color/ut_std_text_gray_02"
                 android:background="@drawable/category_background_selector"
                 android:focusableInTouchMode="true"/>
 
@@ -84,6 +96,8 @@
                 android:layout_width="wrap_content"
                 android:layout_weight="1"
                 android:focusableInTouchMode="true"
+                android:text="선택7"
+                android:textColor="@color/ut_std_text_gray_02"
                 android:background="@drawable/category_background_selector"/>
 
             <com.rudolphriding.giftfriend.SquareButton
@@ -91,6 +105,8 @@
                 android:layout_width="wrap_content"
                 android:layout_weight="1"
                 android:focusableInTouchMode="true"
+                android:text="선택8"
+                android:textColor="@color/ut_std_text_gray_02"
                 android:background="@drawable/category_background_selector"/>
 
         </TableRow>

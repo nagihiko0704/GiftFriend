@@ -3,9 +3,16 @@ package com.rudolphriding.giftfriend;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.ActionBar;
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.ScrollView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main extends ApplicationBase
 {
@@ -13,7 +20,7 @@ public class Main extends ApplicationBase
     private final int TREND_FRAGMENT = 2;
     private final int SEARCH_FRAGMENT = 3;
 
-    ScrollView container;
+    RelativeLayout container;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -24,7 +31,7 @@ public class Main extends ApplicationBase
         //view custom action bar
         customActionbar();
 
-        container = (ScrollView) findViewById(R.id.activity_main_container);
+        container = (RelativeLayout) findViewById(R.id.activity_main_container);
 
         //initialize first view as home
         callFragment(1);

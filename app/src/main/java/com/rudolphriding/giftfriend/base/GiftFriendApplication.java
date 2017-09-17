@@ -1,4 +1,4 @@
-package com.rudolphriding.giftfriend;
+package com.rudolphriding.giftfriend.base;
 
 import android.app.Application;
 
@@ -8,7 +8,7 @@ import com.tsengvn.typekit.Typekit;
  * Created by 이지혜 on 2017-09-06.
  */
 
-public class ApplicationFont extends Application
+public class BaseApplication extends Application
 {
     @Override
     public void onCreate()
