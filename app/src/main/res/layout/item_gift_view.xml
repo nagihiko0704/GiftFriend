@@ -10,7 +10,7 @@
         android:orientation="horizontal"
         android:padding="16dp">
 
-        <com.rudolphriding.giftfriend.SquareButton
+        <com.rudolphriding.giftfriend.widget.SquareButton
             android:layout_width="60dp"
             android:layout_height="wrap_content"
             android:background="@drawable/gift_view_gift_profile"
@@ -33,28 +33,28 @@
 
     </LinearLayout>
 
-    <com.rudolphriding.giftfriend.SquareImageView
+    <com.rudolphriding.giftfriend.widget.SquareImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/ut_std_main_mint_01">
-    </com.rudolphriding.giftfriend.SquareImageView>
+    </com.rudolphriding.giftfriend.widget.SquareImageView>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="30dp"
         android:orientation="horizontal">
 
-        <com.rudolphriding.giftfriend.SquareButton
+        <com.rudolphriding.giftfriend.widget.SquareButton
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="a"/>
 
-        <com.rudolphriding.giftfriend.SquareButton
+        <com.rudolphriding.giftfriend.widget.SquareButton
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="b"/>
 
-        <com.rudolphriding.giftfriend.SquareButton
+        <com.rudolphriding.giftfriend.widget.SquareButton
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="c"/>

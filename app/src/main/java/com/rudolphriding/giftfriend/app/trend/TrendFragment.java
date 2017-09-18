@@ -1,4 +1,4 @@
-package com.rudolphriding.giftfriend;
+package com.rudolphriding.giftfriend.app.trend;
 
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -7,7 +7,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class Trend extends Fragment
+import com.rudolphriding.giftfriend.R;
+
+public class TrendFragment extends Fragment
 {
     @Nullable
     @Override

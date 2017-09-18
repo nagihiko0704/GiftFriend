@@ -1,4 +1,4 @@
-package com.rudolphriding.giftfriend;
+package com.rudolphriding.giftfriend.model;
 
 import android.widget.Button;
 
@@ -6,7 +6,7 @@ import android.widget.Button;
  * Created by 이지혜 on 2017-09-14.
  */
 
-public class RecyclerItem
+public class HomeItem
 {
     int background;
     String title;
@@ -21,7 +21,7 @@ public class RecyclerItem
 
 
 
-    public RecyclerItem(int background, String title, String subtitle)
+    public HomeItem(int background, String title, String subtitle)
     {
         this.background = background;
         this.title = title;

@@ -34,7 +34,7 @@
 
         <TableRow>
 
-            <com.rudolphriding.giftfriend.SquareButton
+            <com.rudolphriding.giftfriend.widget.SquareButton
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 android:layout_weight="1"
@@ -43,7 +43,7 @@
                 android:textColor="@color/ut_std_text_gray_02"
                 android:background="@drawable/category_background_selector"/>
 
-            <com.rudolphriding.giftfriend.SquareButton
+            <com.rudolphriding.giftfriend.widget.SquareButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -52,7 +52,7 @@
                 android:background="@drawable/category_background_selector"
                 android:focusableInTouchMode="true"/>
 
-            <com.rudolphriding.giftfriend.SquareButton
+            <com.rudolphriding.giftfriend.widget.SquareButton
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 android:layout_weight="1"
@@ -61,7 +61,7 @@
                 android:textColor="@color/ut_std_text_gray_02"
                 android:background="@drawable/category_background_selector"/>
 
-            <com.rudolphriding.giftfriend.SquareButton
+            <com.rudolphriding.giftfriend.widget.SquareButton
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 android:layout_weight="1"
@@ -72,7 +72,7 @@
         </TableRow>
 
         <TableRow>
-            <com.rudolphriding.giftfriend.SquareButton
+            <com.rudolphriding.giftfriend.widget.SquareButton
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 android:layout_weight="1"
@@ -81,7 +81,7 @@
                 android:textColor="@color/ut_std_text_gray_02"
                 android:background="@drawable/category_background_selector"/>
 
-            <com.rudolphriding.giftfriend.SquareButton
+            <com.rudolphriding.giftfriend.widget.SquareButton
                 android:id="@+id/squareButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -91,7 +91,7 @@
                 android:background="@drawable/category_background_selector"
                 android:focusableInTouchMode="true"/>
 
-            <com.rudolphriding.giftfriend.SquareButton
+            <com.rudolphriding.giftfriend.widget.SquareButton
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 android:layout_weight="1"
@@ -100,7 +100,7 @@
                 android:textColor="@color/ut_std_text_gray_02"
                 android:background="@drawable/category_background_selector"/>
 
-            <com.rudolphriding.giftfriend.SquareButton
+            <com.rudolphriding.giftfriend.widget.SquareButton
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 android:layout_weight="1"

@@ -5,7 +5,7 @@
     android:id="@+id/activity_trend"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.rudolphriding.giftfriend.Trend">
+    tools:context="com.rudolphriding.giftfriend.app.trend.TrendFragment">
 
     <include
         layout="@layout/item_category"

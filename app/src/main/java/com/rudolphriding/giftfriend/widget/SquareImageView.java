@@ -1,4 +1,4 @@
-package com.rudolphriding.giftfriend;
+package com.rudolphriding.giftfriend.widget;
 
 import android.content.Context;
 import android.util.AttributeSet;

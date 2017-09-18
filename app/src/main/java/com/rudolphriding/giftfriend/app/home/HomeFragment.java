@@ -1,4 +1,4 @@
-package com.rudolphriding.giftfriend;
+package com.rudolphriding.giftfriend.app.home;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -9,6 +9,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.rudolphriding.giftfriend.R;
+import com.rudolphriding.giftfriend.model.HomeItem;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,11 +19,11 @@ import java.util.List;
  * Created by 이지혜 on 2017-09-10.
  */
 
-public class Home extends Fragment
+public class HomeFragment extends Fragment
 {
     private RecyclerView recyclerView;
     private LinearLayoutManager layoutManager;
-    private RecyclerAdapter adapter;
+    private RvAdapter adapter;
 
     @Nullable
     @Override
@@ -62,11 +65,11 @@ public class Home extends Fragment
 
     private void initData()
     {
-        List<RecyclerItem> items = new ArrayList<>();
-        this.adapter = new RecyclerAdapter(getActivity(), items, R.layout.item_home_cardview);
-        
-        items.add(new RecyclerItem(R.drawable.rudingworld_start1, "TEST#1", "SUBTEST#1"));
-        items.add(new RecyclerItem(R.drawable.rudingworld_start2, "TEST#2", "SUBTEST#2"));
+        List<HomeItem> items = new ArrayList<>();
+        this.adapter = new RvAdapter(getActivity(), items, R.layout.item_home_cardview);
+
+        items.add(new HomeItem(R.drawable.rudingworld_start1, "TEST#1", "SUBTEST#1"));
+        items.add(new HomeItem(R.drawable.rudingworld_start2, "TEST#2", "SUBTEST#2"));
         this.adapter.notifyDataSetChanged();
     }
 }
