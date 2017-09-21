@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/friend_profile"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/gift_view_gift_profile"/>
+
+    <TextView
+        android:id="@+id/friend_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Name"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:layout_below="@id/friend_profile"/>
+
+    <TextView
+        android:id="@+id/friend_daytext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_below="@id/friend_name"
+        android:text="Date"
+        android:textSize="18sp"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/friend_editday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/friend_daytext"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:ems="10"
+        android:inputType="date"/>
+
+    <EditText
+        android:id="@+id/friend_memo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/friend_editday"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:padding="5dp"
+        android:background="@drawable/friend_memo_squareline"
+        android:hint="Memo"
+        android:ems="10"
+        android:inputType="textMultiLine"/>
+
+
+</RelativeLayout>

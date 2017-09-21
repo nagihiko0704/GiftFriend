@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.RelativeLayout;
 
+import com.rudolphriding.giftfriend.app.friend.FriendFragment;
 import com.rudolphriding.giftfriend.base.BaseActivity;
 import com.rudolphriding.giftfriend.app.home.HomeFragment;
 import com.rudolphriding.giftfriend.R;
@@ -80,8 +81,10 @@ public class MainActivity extends BaseActivity
                 break;
 
             case 3:
-                SearchFragment searchFragment = new SearchFragment();
-                transaction.replace(R.id.activity_main_container, searchFragment);
+                //SearchFragment searchFragment = new SearchFragment();
+                //transaction.replace(R.id.activity_main_container, searchFragment);
+                FriendFragment friendFragment = new FriendFragment();
+                transaction.replace(R.id.activity_main_container, friendFragment);
                 transaction.commit();
                 break;
         }
