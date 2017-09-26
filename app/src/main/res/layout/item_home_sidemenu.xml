@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <Button
+        android:id="@+id/sidemenu_close_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="선물 할 친구 목록"
+        android:textSize="20sp"
+        app:font="action_bar_font"
+        android:background="#00000000"/>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_below="@id/sidemenu_close_button">
+
+        <TableRow>
+
+        <com.rudolphriding.giftfriend.widget.SquareButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/btn_background_round_mint_01"/>
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="match_parent" />
+
+        <com.rudolphriding.giftfriend.widget.SquareButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/btn_background_round_mint_01"/>
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="match_parent" />
+
+        <com.rudolphriding.giftfriend.widget.SquareButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/btn_background_round_mint_01"/>
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="match_parent" />
+
+        <com.rudolphriding.giftfriend.widget.SquareButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/btn_background_round_mint_01"/>
+    </TableRow>
+
+        <TableRow>
+
+            <com.rudolphriding.giftfriend.widget.SquareButton
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/btn_background_round_mint_01"/>
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="match_parent" />
+
+            <com.rudolphriding.giftfriend.widget.SquareButton
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/btn_background_round_mint_01"/>
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="match_parent" />
+
+            <com.rudolphriding.giftfriend.widget.SquareButton
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/btn_background_round_mint_01"/>
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="match_parent" />
+
+            <com.rudolphriding.giftfriend.widget.SquareButton
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/btn_background_round_mint_01"/>
+        </TableRow>
+
+    </TableLayout>
+
+</RelativeLayout>

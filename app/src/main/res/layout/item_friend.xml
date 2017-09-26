@@ -11,7 +11,7 @@
         android:layout_marginTop="40dp"
         android:layout_marginBottom="10dp"
         android:layout_centerHorizontal="true"
-        android:background="@drawable/gift_view_gift_profile"/>
+        android:background="@drawable/btn_background_round_mint_01.xml"/>
 
     <TextView
         android:id="@+id/friend_name"
@@ -55,7 +55,7 @@
         android:layout_marginLeft="35dp"
         android:layout_marginRight="35dp"
         android:padding="5dp"
-        android:background="@drawable/friend_memo_squareline"
+        android:background="@drawable/bgline_friendmemo_gray_01"
         android:hint="Memo"
         android:ems="10"
         android:inputType="textMultiLine"/>
