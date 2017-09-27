@@ -13,7 +13,7 @@
         <com.rudolphriding.giftfriend.widget.SquareButton
             android:layout_width="60dp"
             android:layout_height="wrap_content"
-            android:background="@drawable/btn_background_round_mint_01.xml"
+            android:background="@drawable/btn_background_round_mint_01"
             android:text="gift"/>
 
         <RelativeLayout

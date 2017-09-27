@@ -68,8 +68,8 @@ public class HomeFragment extends Fragment
         List<HomeItem> items = new ArrayList<>();
         this.adapter = new RvAdapter(getActivity(), items, R.layout.item_home_cardview);
 
-        items.add(new HomeItem(R.drawable.img_home_cardviewbg_01_jpg, "TEST#1", "SUBTEST#1"));
-        items.add(new HomeItem(R.drawable.img_home_cardviewbg_02_jpg, "TEST#2", "SUBTEST#2"));
+        items.add(new HomeItem(R.drawable.img_home_cardviewbg_01, "TEST#1", "SUBTEST#1"));
+        items.add(new HomeItem(R.drawable.img_home_cardviewbg_02, "TEST#2", "SUBTEST#2"));
         this.adapter.notifyDataSetChanged();
     }
 }

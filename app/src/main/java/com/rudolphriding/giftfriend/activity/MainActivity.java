@@ -1,9 +1,11 @@
 package com.rudolphriding.giftfriend.activity;
 
 import android.support.v4.app.FragmentTransaction;
+import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.RelativeLayout;
 
 import com.rudolphriding.giftfriend.app.friend.FriendFragment;
@@ -19,7 +21,11 @@ public class MainActivity extends BaseActivity
     private final int TREND_FRAGMENT = 2;
     private final int SEARCH_FRAGMENT = 3;
 
+    DrawerLayout drawerLayout;
     RelativeLayout container;
+    View friendDrawer;
+    ImageButton menuButton;
+    ImageButton slidMenuBackButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -30,7 +36,31 @@ public class MainActivity extends BaseActivity
         //view custom action bar
         customActionbar();
 
+        friendDrawer = (View) findViewById(R.id.drawer);
+        drawerLayout = (DrawerLayout) findViewById(R.id.activity_main);
         container = (RelativeLayout) findViewById(R.id.activity_main_container);
+        menuButton = (ImageButton) findViewById(R.id.actionbar_button_menu);
+        slidMenuBackButton = (ImageButton) findViewById(R.id.sidemenu_button_close);
+
+        //drawer open by button on action bar
+        menuButton.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                drawerLayout.openDrawer(friendDrawer);
+            }
+        });
+
+        //drawer close by button on slide menu
+        slidMenuBackButton.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                drawerLayout.closeDrawer(friendDrawer);
+            }
+        });
 
         //initialize first view as home
         callFragment(1);
