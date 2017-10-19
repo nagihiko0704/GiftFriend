@@ -10,7 +10,7 @@
     <LinearLayout
         android:id="@+id/dockbar_main"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="48dp"
         android:weightSum="3"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
@@ -21,58 +21,82 @@
             android:id="@+id/dockbar_main_left"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_weight="1">
+            android:paddingTop="5dp"
+            android:paddingBottom="6dp"
+            android:layout_weight="1"
+            android:onClick="MaintoMain">
 
-            <ImageButton
+            <ImageView
                 android:id="@+id/dockbar_main_main"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:padding="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:src="@drawable/ic_home_black_24px"
                 android:background="#00000000"
                 android:scaleType="centerInside"
-                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                android:onClick="MaintoMain"/>
+                android:layout_below="@id/dockbar_main_main"
+                android:text="home"
+                android:textSize="12sp"/>
         </RelativeLayout>
 
         <RelativeLayout
             android:id="@+id/dockbar_main_mid"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_weight="1">
+            android:paddingTop="5dp"
+            android:paddingBottom="6dp"
+            android:layout_weight="1"
+            android:onClick="MaintoSearch">
 
-            <ImageButton
+            <ImageView
                 android:id="@+id/dockbar_main_search"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:padding="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:src="@drawable/ic_search_black_24px"
                 android:background="#00000000"
                 android:scaleType="centerInside"
-                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                android:onClick="MaintoSearch"/>
+                android:layout_below="@id/dockbar_main_search"
+                android:text="search"
+                android:textSize="12sp"/>
         </RelativeLayout>
 
         <RelativeLayout
             android:id="@+id/dockbar_main_right"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_weight="1">
+            android:paddingTop="5dp"
+            android:paddingBottom="6dp"
+            android:layout_weight="1"
+            android:onClick="MaintoTrend">
 
-            <ImageButton
+            <ImageView
                 android:id="@+id/dockbar_main_trend"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:padding="12dp"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
                 android:src="@drawable/ic_event_black_24dp"
                 android:background="#00000000"
                 android:adjustViewBounds="true"
                 android:scaleType="centerInside"
-                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                android:onClick="MaintoTrend"/>
+                android:layout_below="@id/dockbar_main_trend"
+                android:text="trend"
+                android:textSize="12sp"/>
         </RelativeLayout>
 
     </LinearLayout>

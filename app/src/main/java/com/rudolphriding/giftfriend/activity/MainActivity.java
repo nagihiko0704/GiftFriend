@@ -43,24 +43,10 @@ public class MainActivity extends BaseActivity
         slidMenuBackButton = (ImageButton) findViewById(R.id.sidemenu_button_close);
 
         //drawer open by button on action bar
-        menuButton.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View view)
-            {
-                drawerLayout.openDrawer(friendDrawer);
-            }
-        });
+        draweOpnebyMenuButton();
 
         //drawer close by button on slide menu
-        slidMenuBackButton.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View view)
-            {
-                drawerLayout.closeDrawer(friendDrawer);
-            }
-        });
+        drawerClosebyBackButton();
 
         //initialize first view as home
         callFragment(1);
@@ -73,6 +59,41 @@ public class MainActivity extends BaseActivity
         getSupportActionBar().setCustomView(R.layout.item_main_actionbar);
     }
 
+    /* /////////////////////////////////////////////////
+    //                                                //
+    //                  About drawer                  //
+    //                                                //
+    ///////////////////////////////////////////////// */
+
+    public void draweOpnebyMenuButton()
+    {
+        menuButton.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                drawerLayout.openDrawer(friendDrawer);
+            }
+        });
+    }
+
+    public void drawerClosebyBackButton()
+    {
+        slidMenuBackButton.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                drawerLayout.closeDrawer(friendDrawer);
+            }
+        });
+    }
+
+    /* /////////////////////////////////////////////////
+    //                                                //
+    //              About window switch               //
+    //                                                //
+    ///////////////////////////////////////////////// */
 
     //update main
     public void MaintoMain(View view)

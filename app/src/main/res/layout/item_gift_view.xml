@@ -4,6 +4,8 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent">
 
+    <!-- gift profile -->
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -17,27 +19,56 @@
             android:text="gift"/>
 
         <RelativeLayout
-            android:layout_width="match_parent"
+            android:id="@+id/gitftview_giftnamecontainer_layout"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:padding="20dp">
+            android:layout_marginLeft="10dp"
+            android:padding="10dp"
+            android:layout_weight="1">
 
             <TextView
+                android:id="@+id/giftview_giftname_text"
                 android:layout_width="wrap_content"
-                android:layout_height="20dp"
-                android:layout_centerVertical="true"
-                android:text="GIFT CATEGORY"
-                android:textSize="18sp"/>
+                android:layout_height="wrap_content"
+                android:paddingBottom="2dp"
+                android:text="선물 상품군 이름"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/giftview_giftcategory_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="2dp"
+                android:layout_below="@+id/giftview_giftname_text"
+                android:text="선물 카테고리"
+                android:textColor="@color/ut_std_bgline_gray_mint_01"/>
 
         </RelativeLayout>
 
+        <ImageButton
+            android:id="@+id/giftview_send_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/gitftview_giftnamecontainer_layout"
+            android:src="@drawable/ic_send_black_24px"
+            android:padding="18dp"
+            android:scaleType="centerInside"
+            android:background="#00000000"/>
+
     </LinearLayout>
 
-    <com.rudolphriding.giftfriend.widget.SquareImageView
+    <!-- gift image -->
+
+    <ImageView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="200dp"
         android:background="@color/ut_std_main_mint_01">
-    </com.rudolphriding.giftfriend.widget.SquareImageView>
+    </ImageView>
+
+    <!-- tag -->
+
+    <!--  user buttons -->
 
     <LinearLayout
         android:layout_width="match_parent"
