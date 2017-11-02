@@ -44,24 +44,17 @@ public class HomeFragment extends Fragment
         recyclerView.setAdapter(adapter);
         recyclerView.scrollToPosition(0);
 
-
-
         return hView;
     }
-/*
-    @Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState)
-    {
-        super.onActivityCreated(savedInstanceState);
-    }
 
-    @Override
-    public void onCreate(@Nullable Bundle savedInstanceState)
+    public static HomeFragment newInstance()
     {
-        super.onCreate(savedInstanceState);
-        initData();
+        Bundle args = new Bundle();
+
+        HomeFragment fragment = new HomeFragment();
+        fragment.setArguments(args);
+        return fragment;
     }
-*/
 
     private void initData()
     {

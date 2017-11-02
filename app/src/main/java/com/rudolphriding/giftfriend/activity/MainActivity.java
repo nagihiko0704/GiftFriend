@@ -1,6 +1,8 @@
 package com.rudolphriding.giftfriend.activity;
 
+import android.support.design.widget.TabLayout;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.os.Bundle;
@@ -12,17 +14,13 @@ import com.rudolphriding.giftfriend.app.friend.FriendFragment;
 import com.rudolphriding.giftfriend.base.BaseActivity;
 import com.rudolphriding.giftfriend.app.home.HomeFragment;
 import com.rudolphriding.giftfriend.R;
-import com.rudolphriding.giftfriend.app.search.SearchFragment;
 import com.rudolphriding.giftfriend.app.trend.TrendFragment;
 
 public class MainActivity extends BaseActivity
 {
-    private final int HOME_FRAGMENT = 1;
-    private final int TREND_FRAGMENT = 2;
-    private final int SEARCH_FRAGMENT = 3;
-
+    ViewPager viewPager;
+    TabLayout tabLayout;
     DrawerLayout drawerLayout;
-    RelativeLayout container;
     View friendDrawer;
     ImageButton menuButton;
     ImageButton slidMenuBackButton;
@@ -36,11 +34,36 @@ public class MainActivity extends BaseActivity
         //view custom action bar
         customActionbar();
 
+        //initialize tab
+        initTab();
+
         friendDrawer = (View) findViewById(R.id.drawer);
         drawerLayout = (DrawerLayout) findViewById(R.id.activity_main);
-        container = (RelativeLayout) findViewById(R.id.activity_main_container);
         menuButton = (ImageButton) findViewById(R.id.actionbar_button_menu);
         slidMenuBackButton = (ImageButton) findViewById(R.id.sidemenu_button_close);
+
+        //set MainPagerAdapter
+        viewPager = (ViewPager) findViewById(R.id.activity_main_veiwpager);
+        MainPagerAdapter pagerAdapter = new MainPagerAdapter(getSupportFragmentManager(), tabLayout.getTabCount());
+        viewPager.setAdapter(pagerAdapter);
+        viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
+
+        tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+            @Override
+            public void onTabSelected(TabLayout.Tab tab) {
+                viewPager.setCurrentItem(tab.getPosition());
+            }
+
+            @Override
+            public void onTabUnselected(TabLayout.Tab tab) {
+
+            }
+
+            @Override
+            public void onTabReselected(TabLayout.Tab tab) {
+
+            }
+        });
 
         //drawer open by button on action bar
         draweOpnebyMenuButton();
@@ -48,15 +71,26 @@ public class MainActivity extends BaseActivity
         //drawer close by button on slide menu
         drawerClosebyBackButton();
 
-        //initialize first view as home
-        callFragment(1);
     }
+
+    /* /////////////////////////////////////////////////
+    //                                                //
+    //                    About UI                    //
+    //                                                //
+    ///////////////////////////////////////////////// */
 
     public void customActionbar()
     {
         getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
         getSupportActionBar().setDisplayShowCustomEnabled(true);
         getSupportActionBar().setCustomView(R.layout.item_main_actionbar);
+    }
+
+    public void initTab()
+    {
+        tabLayout = (TabLayout) findViewById(R.id.activity_main_tablayout);
+        tabLayout.addTab(tabLayout.newTab().setText("선물스토리"));
+        tabLayout.addTab(tabLayout.newTab().setText("친구스토리"));
     }
 
     /* /////////////////////////////////////////////////
@@ -95,52 +129,7 @@ public class MainActivity extends BaseActivity
     //                                                //
     ///////////////////////////////////////////////// */
 
-    //update main
-    public void MaintoMain(View view)
-    {
-        callFragment(HOME_FRAGMENT);
-    }
 
-    //change activity main to trend
-    public void MaintoTrend(View view)
-    {
-        callFragment(TREND_FRAGMENT);
-    }
-
-    //change activity main to search
-    public void MaintoSearch(View view)
-    {
-        callFragment(SEARCH_FRAGMENT);
-    }
-
-    private void callFragment(int fragmentNum)
-    {
-        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-
-        switch (fragmentNum)
-        {
-            case 1:
-                HomeFragment homeFragment = new HomeFragment();
-                transaction.replace(R.id.activity_main_container, homeFragment);
-                transaction.commit();
-                break;
-
-            case 2:
-                TrendFragment trendFragment = new TrendFragment();
-                transaction.replace(R.id.activity_main_container, trendFragment);
-                transaction.commit();
-                break;
-
-            case 3:
-                //SearchFragment searchFragment = new SearchFragment();
-                //transaction.replace(R.id.activity_main_container, searchFragment);
-                FriendFragment friendFragment = new FriendFragment();
-                transaction.replace(R.id.activity_main_container, friendFragment);
-                transaction.commit();
-                break;
-        }
-
-    }
 
 
 }

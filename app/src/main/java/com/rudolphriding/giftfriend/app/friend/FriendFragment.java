@@ -22,4 +22,13 @@ public class FriendFragment extends Fragment
         View fView = inflater.inflate(R.layout.fragment_friend, null);
         return fView;
     }
+
+    public static FriendFragment newInstance()
+    {
+        Bundle args = new Bundle();
+
+        FriendFragment fragment = new FriendFragment();
+        fragment.setArguments(args);
+        return fragment;
+    }
 }

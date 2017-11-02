@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">GiftFriend</string>
     <string name="app_name_ko">선물친구</string>
+
+    <string name="mood_good_number">
+        <sub>11</sub>
+    </string>
 </resources>

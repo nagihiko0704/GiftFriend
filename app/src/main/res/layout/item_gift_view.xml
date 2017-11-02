@@ -70,27 +70,39 @@
 
     <!--  user buttons -->
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="30dp"
+        android:layout_height="40dp"
         android:orientation="horizontal">
 
-        <com.rudolphriding.giftfriend.widget.SquareButton
+        <ImageButton
+            android:id="@+id/giftview_moodgood_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_mood_black_24px"
+            android:background="#00000000"/>
+
+        <TextView
+            android:id="@+id/giftview_moodgood_text"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="a"/>
+            android:layout_height="30dp"
+            android:text="@string/mood_good_number"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/giftview_moodgood_button"
+            android:layout_toEndOf="@+id/giftview_moodgood_button"
+            android:gravity="bottom"/>
 
-        <com.rudolphriding.giftfriend.widget.SquareButton
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="b"/>
+        <ImageButton
+            android:id="@+id/giftview_moodbad_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/giftview_moodgood_text"
+            android:src="@drawable/ic_mood_bad_black_24px"
+            android:background="#00000000" />
 
-        <com.rudolphriding.giftfriend.widget.SquareButton
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="c"/>
-
-    </LinearLayout>
+    </RelativeLayout>
 
     <TextView
         android:layout_width="match_parent"
