@@ -1,15 +1,122 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/home_recyclerview"
+    <android.support.v4.view.ViewPager
+        android:id="@+id/home_viewPager"
         android:layout_width="match_parent"
         android:layout_height="250dp"
-        android:background="@color/ut_std_main_mint_04">
+        android:background="@color/ut_std_main_vanilla_04">
 
-    </android.support.v7.widget.RecyclerView>
+    </android.support.v4.view.ViewPager>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/home_dotNavi_tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/home_viewPager"
+        app:tabBackground="@drawable/btn_homebanner_round_selector"
+        app:tabGravity="center"
+        app:tabIndicatorHeight="0dp">
+
+    </android.support.design.widget.TabLayout>
+
+    <TableLayout
+        android:id="@+id/home_buttoncontainer_tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/home_viewPager"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="15dp"
+        android:stretchColumns="*">
+        <TableRow
+            android:layout_weight="1"
+            android:weightSum="4">
+            <com.rudolphriding.giftfriend.widget.SquareButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1" />
+            <com.rudolphriding.giftfriend.widget.SquareButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"/>
+            <com.rudolphriding.giftfriend.widget.SquareButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"/>
+            <com.rudolphriding.giftfriend.widget.SquareButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"/>
+
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:text="기념일 별\n추천 선물"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:text="감정으로\n찾는 선물"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:text="브랜드\n선물"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="선물 기획전"
+                android:textAlignment="center"/>
+
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/btn_giftfindbg_roundrect_selector"
+        style="?android:attr/borderlessButtonStyle"
+        android:text="선물 준비 시작하기"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@color/ut_std_main_mint_05"
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
 
 </RelativeLayout>

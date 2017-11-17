@@ -2,7 +2,10 @@ package com.rudolphriding.giftfriend.app.home;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
+import android.support.v4.view.PagerAdapter;
+import android.support.v4.view.ViewPager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -21,9 +24,9 @@ import java.util.List;
 
 public class HomeFragment extends Fragment
 {
-    private RecyclerView recyclerView;
-    private LinearLayoutManager layoutManager;
-    private RvAdapter adapter;
+    ViewPager viewPager;
+    VpAdapter adapter;
+    TabLayout tabLayout;
 
     @Nullable
     @Override
@@ -31,18 +34,12 @@ public class HomeFragment extends Fragment
     {
         View hView = inflater.inflate(R.layout.fragment_home, container, false);
 
-        //recyclerview
-        recyclerView = (RecyclerView)hView.findViewById(R.id.home_recyclerview);
+        viewPager = (ViewPager) hView.findViewById(R.id.home_viewPager);
+        adapter = new VpAdapter(getChildFragmentManager());
+        viewPager.setAdapter(adapter);
 
-        initData();
-
-        layoutManager = new LinearLayoutManager(getActivity());
-        layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
-
-        recyclerView.setHasFixedSize(true);
-        recyclerView.setLayoutManager(layoutManager);
-        recyclerView.setAdapter(adapter);
-        recyclerView.scrollToPosition(0);
+        tabLayout = (TabLayout) hView.findViewById(R.id.home_dotNavi_tabLayout);
+        tabLayout.setupWithViewPager(viewPager, true);
 
         return hView;
     }
@@ -56,13 +53,4 @@ public class HomeFragment extends Fragment
         return fragment;
     }
 
-    private void initData()
-    {
-        List<HomeItem> items = new ArrayList<>();
-        this.adapter = new RvAdapter(getActivity(), items, R.layout.item_home_cardview);
-
-        items.add(new HomeItem(R.drawable.img_home_cardviewbg_01, "TEST#1", "SUBTEST#1"));
-        items.add(new HomeItem(R.drawable.img_home_cardviewbg_02, "TEST#2", "SUBTEST#2"));
-        this.adapter.notifyDataSetChanged();
-    }
 }

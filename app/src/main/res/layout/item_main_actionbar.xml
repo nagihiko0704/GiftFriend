@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="56dp"
-    android:background="@color/ut_std_main_mint_02">
+    android:background="#00000000">
 
     <ImageButton
         android:id="@+id/actionbar_button_menu"
@@ -26,7 +26,8 @@
         android:textAlignment="center"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
-        android:textSize="30sp"/>
+        android:textSize="27sp"
+        android:textColor="#000000"/>
 
     <!--ImageButton
         android:id="@+id/actionbar_button_friendlist"

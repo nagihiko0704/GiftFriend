@@ -2,22 +2,24 @@ package com.rudolphriding.giftfriend.widget;
 
 import android.content.Context;
 import android.util.AttributeSet;
-import android.widget.ImageView;
 
 /**
- * Created by 이지혜 on 2017-09-10.
+ * Created by LeeJihye on 2017-11-06.
  */
 
-public class SquareImageView extends android.support.v7.widget.AppCompatImageView {
-
-    public SquareImageView(Context context) {
+public class SquareImageButton extends android.support.v7.widget.AppCompatImageButton
+{
+    public SquareImageButton(Context context) {
         super(context);
     }
 
-    public SquareImageView(Context context, AttributeSet attrs) { super(context, attrs); }
+    public SquareImageButton(Context context, AttributeSet attrs) {
+        super(context, attrs);
+    }
 
-    public SquareImageView(Context context, AttributeSet attrs, int defStyle) { super(context, attrs, defStyle); }
-
+    public SquareImageButton(Context context, AttributeSet attrs, int defStyleAttr) {
+        super(context, attrs, defStyleAttr);
+    }
 
     @Override
     public void onMeasure(int widthMeasureSpec, int heightMeasureSpec)
@@ -28,5 +30,4 @@ public class SquareImageView extends android.support.v7.widget.AppCompatImageVie
         int size = width > height ? height : width;
         setMeasuredDimension(size, size); // make it square
     }
-
 }

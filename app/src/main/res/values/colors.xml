@@ -1,22 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#88E2E3</color>
+    <color name="colorPrimary">#FFFFFF</color>
     <color name="colorPrimaryDark">#F0F0F0</color>
     <color name="colorAccent">#FF4081</color>
 
     <!-- main -->
 
-    <color name="ut_std_main_mint_01">#BEEFF0</color>
-    <color name="ut_std_main_mint_02">#88E2E3</color>
-    <color name="ut_std_main_mint_03">#3CD3D4</color>
-    <color name="ut_std_main_mint_04">#0BB8B9</color>
+    <color name="ut_std_main_mint_01">#CFFFF9</color>
+    <color name="ut_std_main_mint_02">#BEEFF0</color>
+    <color name="ut_std_main_mint_03">#77E2E3</color>
+    <color name="ut_std_main_mint_04">#3CD3D4</color>
+    <color name="ut_std_main_mint_05">#345A52</color>
+
+    <color name="ut_std_main_vanilla_01">#D1E9DD</color>
+    <color name="ut_std_main_vanilla_02">#B6E7D0</color>
+    <color name="ut_std_main_vanilla_03">#92E7BE</color>
+    <color name="ut_std_main_vanilla_04">#6DE8AE</color>
     
     <color name="ut_std_main_blue_01">#3897F0</color>
 
     <!-- text -->
     
-    <color name="ut_std_text_gray_01">#B2B2B2</color>
-    <color name="ut_std_text_gray_02">#262626</color>
+    <color name="ut_std_text_gray_01">#DCDCDC</color>
+    <color name="ut_std_text_gray_02">#95989A</color>
+    <color name="ut_std_text_gray_03">#797979</color>
+    <color name="ut_std_text_gray_04">#323232</color>
 
     <!-- bgline -->
 

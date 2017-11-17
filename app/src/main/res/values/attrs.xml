@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="GiftCategoryButton">
+        <attr name="btnSize" format="reference|integer"/>
+        <attr name="btnImage" format="reference|integer"/>
+        <attr name="btnMargin" format="reference|integer"/>
+        <attr name="textWidth" format="reference|integer"/>
+        <attr name="textHeight" format="reference|integer"/>
+        <attr name="text" format="reference|string"/>
+        <attr name="textColor" format="reference|color"/>
+
+    </declare-styleable>
+</resources>
