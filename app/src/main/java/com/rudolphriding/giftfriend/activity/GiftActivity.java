@@ -4,8 +4,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.rudolphriding.giftfriend.R;
+import com.rudolphriding.giftfriend.base.BaseActivity;
 
-public class GiftActivity extends AppCompatActivity {
+public class GiftActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

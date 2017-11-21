@@ -8,23 +8,22 @@
     android:layout_height="match_parent"
     tools:context="com.rudolphriding.giftfriend.activity.MainActivity">
 
-    <!-- container -->
+    <!-- main content -->
 
     <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <!-- main content -->
-
-        <RelativeLayout
             android:id="@+id/activity_main_container"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/activity_main_actionBar"
+            layout="@layout/item_main_actionbar"/>
 
             <android.support.design.widget.TabLayout
                 android:id="@+id/activity_main_tablayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_below="@id/activity_main_actionBar"
                 app:tabIndicatorColor="@color/ut_std_main_mint_03"
                 app:tabSelectedTextColor="@color/ut_std_main_mint_03"
                 app:tabTextColor="@color/ut_std_text_gray_01">
@@ -47,7 +46,7 @@
 
             </android.support.v4.view.ViewPager>
         </RelativeLayout>
-    </RelativeLayout>
+
 
     <!-- side menu -->
 

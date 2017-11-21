@@ -10,4 +10,9 @@
         <item name="android:windowLightStatusBar">true</item>
 
     </style>
+
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:statusBarColor">#CFFFF9</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
 </resources>

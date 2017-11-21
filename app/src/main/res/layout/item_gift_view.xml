@@ -1,120 +1,158 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent">
 
-    <!-- gift profile -->
+    <ImageView
+        android:id="@+id/giftView_imageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/ut_std_main_vanilla_04"
+        android:elevation="4dp" />
+
+    <TableLayout
+        android:id="@+id/giftView_categoryContainer_TableLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="170dp"
+        android:elevation="4dp">
+
+        <TableRow>
+
+            <Button
+                android:layout_height="60dp"
+                android:layout_width="60dp"
+                android:elevation="2dp"/>
+
+            <Space
+                android:layout_height="match_parent"
+                android:layout_width="10dp"/>
+
+            <Button
+                android:layout_height="60dp"
+                android:layout_width="60dp"
+                android:elevation="2dp"/>
+
+        </TableRow>
+    </TableLayout>
 
     <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="16dp">
+        android:layout_height="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_below="@+id/giftView_categoryContainer_TableLayout">
 
-        <com.rudolphriding.giftfriend.widget.SquareButton
-            android:layout_width="60dp"
+        <TableLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/btn_background_round_mint_01"
-            android:text="gift"/>
+            android:layout_marginBottom="10dp">
 
-        <RelativeLayout
-            android:id="@+id/gitftview_giftnamecontainer_layout"
+            <TableRow
+                android:layout_height="match_parent"
+                android:layout_width="match_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="선물 상품군"
+                        android:textStyle="bold"
+                        android:textColor="@color/ut_std_main_vanilla_01"
+                        android:textSize="15dp"
+                        android:gravity="center_vertical"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="선물 스토리 제목"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:gravity="center_vertical"/>
+
+                </LinearLayout>
+
+                <ImageButton
+                    android:layout_height="50dp"
+                    android:layout_width="50dp"
+                    android:src="@drawable/ic_card_giftcard_black_24dp"
+                    android:background="#00000000"
+                    />
+
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:maxLines="4"
+            android:ellipsize="end"
+            android:text="@string/long_string"
+            android:textSize="14sp"/>
+
+        <TextView
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:layout_marginLeft="10dp"
-            android:padding="10dp"
-            android:layout_weight="1">
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@color/ut_std_main_vanilla_01"
+            android:text="#태그1"
+            android:textSize="18sp"
+            android:textColor="@color/ut_std_text_gray_02"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@color/ut_std_main_vanilla_01"
+            android:text="#긴태그입니다1"
+            android:textSize="18sp"
+            android:textColor="@color/ut_std_text_gray_02"/>
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
 
             <TextView
-                android:id="@+id/giftview_giftname_text"
+                android:id="@+id/giftView_for_TextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingBottom="2dp"
-                android:text="선물 상품군 이름"
-                android:textSize="18sp" />
+                android:layout_marginBottom="20dp"
+                android:layout_alignParentBottom="true"
+                android:text="for"
+                android:textSize="18sp"/>
 
             <TextView
-                android:id="@+id/giftview_giftcategory_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingTop="2dp"
-                android:layout_below="@+id/giftview_giftname_text"
-                android:text="선물 카테고리"
-                android:textColor="@color/ut_std_bgline_gray_mint_01"/>
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="5dp"
+                android:text="부모님"
+                android:textSize="18sp"
+                android:layout_toRightOf="@id/giftView_for_TextView"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/btn_giftfindbg_roundrect_default"/>
 
         </RelativeLayout>
 
-        <ImageButton
-            android:id="@+id/giftview_send_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toRightOf="@id/gitftview_giftnamecontainer_layout"
-            android:src="@drawable/ic_send_black_24px"
-            android:padding="18dp"
-            android:scaleType="centerInside"
-            android:background="#00000000"/>
 
     </LinearLayout>
-
-    <!-- gift image -->
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:background="@color/ut_std_main_mint_01">
-    </ImageView>
-
-    <!-- tag -->
-
-    <!--  user buttons -->
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:orientation="horizontal">
-
-        <ImageButton
-            android:id="@+id/giftview_moodgood_button"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_centerVertical="true"
-            android:src="@drawable/ic_mood_black_24px"
-            android:background="#00000000"/>
-
-        <TextView
-            android:id="@+id/giftview_moodgood_text"
-            android:layout_width="wrap_content"
-            android:layout_height="30dp"
-            android:text="@string/mood_good_number"
-            android:layout_centerVertical="true"
-            android:layout_toRightOf="@+id/giftview_moodgood_button"
-            android:layout_toEndOf="@+id/giftview_moodgood_button"
-            android:gravity="bottom"/>
-
-        <ImageButton
-            android:id="@+id/giftview_moodbad_button"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_centerVertical="true"
-            android:layout_toRightOf="@id/giftview_moodgood_text"
-            android:src="@drawable/ic_mood_bad_black_24px"
-            android:background="#00000000" />
-
-    </RelativeLayout>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="SCENARIO NAME"
-        android:textSize="18sp"
-        android:textStyle="bold"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="scenario text "
-        android:textSize="18sp"/>
-
-</LinearLayout>
+</RelativeLayout>

@@ -1,7 +1,9 @@
 package com.rudolphriding.giftfriend.widget;
 
 import android.content.Context;
+import android.support.annotation.Nullable;
 import android.util.AttributeSet;
+import android.view.View;
 import android.widget.Button;
 
 /**
@@ -23,5 +25,10 @@ public class SquareButton extends android.support.v7.widget.AppCompatButton
         int height = MeasureSpec.getSize(heightMeasureSpec);
         int size = width > height ? height : width;
         setMeasuredDimension(size, size); // make it square
+    }
+
+    @Override
+    public void setOnClickListener(@Nullable OnClickListener l) {
+        super.setOnClickListener(l);
     }
 }

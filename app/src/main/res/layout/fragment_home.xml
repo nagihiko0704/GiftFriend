@@ -10,7 +10,7 @@
         android:id="@+id/home_viewPager"
         android:layout_width="match_parent"
         android:layout_height="250dp"
-        android:background="@color/ut_std_main_vanilla_04">
+        android:background="#4DBE93">
 
     </android.support.v4.view.ViewPager>
 
@@ -39,6 +39,7 @@
             android:layout_weight="1"
             android:weightSum="4">
             <com.rudolphriding.giftfriend.widget.SquareButton
+                android:id="@+id/home_anniv_SquareButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="10dp"
@@ -114,7 +115,7 @@
         android:textStyle="bold"
         android:textAlignment="center"
         android:textColor="@color/ut_std_main_mint_05"
-        android:id="@+id/button"
+        android:id="@+id/home_giftStart_Button"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
 

@@ -23,7 +23,6 @@ public class MainActivity extends BaseActivity
     DrawerLayout drawerLayout;
     View friendDrawer;
     ImageButton menuButton;
-    ImageButton slidMenuBackButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -32,7 +31,7 @@ public class MainActivity extends BaseActivity
         setContentView(R.layout.activity_main);
 
         //view custom action bar
-        customActionbar();
+        //customActionbar();
 
         //initialize tab
         initTab();
@@ -40,7 +39,6 @@ public class MainActivity extends BaseActivity
         friendDrawer = (View) findViewById(R.id.drawer);
         drawerLayout = (DrawerLayout) findViewById(R.id.activity_main);
         menuButton = (ImageButton) findViewById(R.id.actionbar_button_menu);
-        slidMenuBackButton = (ImageButton) findViewById(R.id.sidemenu_button_close);
 
         //set MainPagerAdapter
         viewPager = (ViewPager) findViewById(R.id.activity_main_veiwpager);
@@ -67,9 +65,6 @@ public class MainActivity extends BaseActivity
 
         //drawer open by button on action bar
         draweOpnebyMenuButton();
-
-        //drawer close by button on slide menu
-        drawerClosebyBackButton();
 
     }
 
@@ -107,18 +102,6 @@ public class MainActivity extends BaseActivity
             public void onClick(View view)
             {
                 drawerLayout.openDrawer(friendDrawer);
-            }
-        });
-    }
-
-    public void drawerClosebyBackButton()
-    {
-        slidMenuBackButton.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View view)
-            {
-                drawerLayout.closeDrawer(friendDrawer);
             }
         });
     }
