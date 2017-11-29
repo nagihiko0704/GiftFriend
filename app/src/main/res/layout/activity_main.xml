@@ -22,25 +22,26 @@
             <android.support.design.widget.TabLayout
                 android:id="@+id/activity_main_tablayout"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="34dp"
                 android:layout_below="@id/activity_main_actionBar"
-                app:tabIndicatorColor="@color/ut_std_main_mint_03"
-                app:tabSelectedTextColor="@color/ut_std_main_mint_03"
-                app:tabTextColor="@color/ut_std_text_gray_01">
+                app:tabIndicatorColor="#797979"
+                app:tabSelectedTextColor="#797979"
+                app:tabTextColor="#BDBDBD">
 
             </android.support.design.widget.TabLayout>
 
             <View
+                android:id="@+id/activity_main_tabLine"
                 android:layout_width="match_parent"
-                android:layout_height="1dp"
+                android:layout_height="2dp"
                 android:layout_below="@id/activity_main_tablayout"
-                android:background="@color/ut_std_main_mint_03"/>
+                android:background="#797979"/>
 
             <android.support.v4.view.ViewPager
                 android:id="@+id/activity_main_veiwpager"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_below="@id/activity_main_tablayout">
+                android:layout_below="@id/activity_main_tabLine">
 
 
 

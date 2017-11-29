@@ -31,8 +31,9 @@
             android:textAlignment="center"
             android:layout_centerVertical="true"
             android:layout_centerHorizontal="true"
-            android:textSize="27sp"
-            android:textColor="#000000"/>
+            android:textSize="24dp"
+            android:textColor="#000000"
+            android:includeFontPadding="false"/>
 
     </RelativeLayout>
 
