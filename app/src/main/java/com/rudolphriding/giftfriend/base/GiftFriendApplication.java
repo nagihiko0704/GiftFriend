@@ -18,6 +18,7 @@ public class GiftFriendApplication extends Application
         Typekit.getInstance()
                 .addNormal(Typekit.createFromAsset(this, "Spoqa Han Sans Light.ttf"))
                 .addBold(Typekit.createFromAsset(this, "Spoqa Han Sans Regular.ttf"))
-                .add("action_bar_font",Typekit.createFromAsset(this, "BMJUA_ttf.ttf"));
+                .add("action_bar_font",Typekit.createFromAsset(this, "BMJUA_ttf.ttf"))
+                .add("relation_font",Typekit.createFromAsset(this, "NotoSerifCJKkr-Light.otf"));
     }
 }

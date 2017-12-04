@@ -5,40 +5,6 @@
     android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="12dp abc ABC 가나다"
-        android:textSize="12dp"
-        android:textColor="#000000"
-        android:elevation="10dp"
-        android:id="@+id/textView" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="16dp abc ABC 가나다"
-        android:textSize="16dp"
-        android:textColor="#000000"
-        android:elevation="10dp"
-        android:layout_below="@+id/textView"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="30dp"
-        android:id="@+id/textView2" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="24dp abc ABC 가나다"
-        android:textSize="24dp"
-        android:textColor="#000000"
-        android:elevation="10dp"
-        android:layout_below="@+id/textView2"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="34dp" />
-
 
     <ImageView
         android:id="@+id/giftView_imageView"
@@ -54,33 +20,42 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="195dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="173dp"
         android:elevation="4dp">
 
         <TableRow>
 
             <Button
-                android:layout_height="60dp"
-                android:layout_width="60dp"
+                android:layout_height="48dp"
+                android:layout_width="48dp"
+                android:background="#FFFFFF"
+                android:text="상황"
+                android:textSize="12dp"
+                android:textColor="@color/ut_std_text_gray_03"
                 android:elevation="2dp"/>
 
             <Space
                 android:layout_height="match_parent"
-                android:layout_width="10dp"/>
+                android:layout_width="4dp"/>
 
             <Button
-                android:layout_height="60dp"
-                android:layout_width="60dp"
+                android:layout_height="48dp"
+                android:layout_width="48dp"
+                android:background="#FFFFFF"
+                android:text="감정"
+                android:textSize="12dp"
+                android:textColor="@color/ut_std_text_gray_03"
                 android:elevation="2dp"/>
 
         </TableRow>
     </TableLayout>
 
     <LinearLayout
+        android:id="@+id/giftView_textContainer_LinearLayout"
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="26dp"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
@@ -105,8 +80,8 @@
                         android:layout_weight="1"
                         android:text="선물 상품군"
                         android:textStyle="bold"
-                        android:textColor="@color/ut_std_main_vanilla_01"
-                        android:textSize="18dp"
+                        android:textColor="#BDBDBD"
+                        android:textSize="12dp"
                         android:includeFontPadding="false"
                         android:gravity="center_vertical"/>
 
@@ -116,18 +91,20 @@
                         android:layout_weight="1"
                         android:text="선물 스토리 제목"
                         android:textStyle="bold"
-                        android:textSize="24dp"
+                        android:textSize="16dp"
+                        android:textColor="#262626"
                         android:includeFontPadding="false"
                         android:gravity="center_vertical"/>
 
                 </LinearLayout>
 
                 <ImageButton
-                    android:layout_height="50dp"
-                    android:layout_width="50dp"
-                    android:src="@drawable/ic_card_giftcard_black_24dp"
-                    android:background="#00000000"
-                    />
+                    android:layout_height="48dp"
+                    android:layout_width="48dp"
+                    android:padding="12dp"
+                    android:src="@drawable/ic_heart_selector"
+                    android:scaleType="centerInside"
+                    android:background="#00000000"/>
 
             </TableRow>
         </TableLayout>
@@ -139,59 +116,55 @@
             android:maxLines="4"
             android:ellipsize="end"
             android:text="@string/long_string"
-            android:textSize="16sp"
+            android:textSize="12dp"
+            android:textColor="#262626"
             android:includeFontPadding="false"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="12dp"
-            android:background="@color/ut_std_main_vanilla_01"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:background="#EEEEEE"
             android:text="#태그1"
-
-            android:textSize="20sp"
+            android:textSize="14dp"
             android:textColor="@color/ut_std_text_gray_02"
             android:includeFontPadding="false"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="12dp"
-            android:background="@color/ut_std_main_vanilla_01"
-            android:text="#긴태그입니다1"
-            android:textSize="20sp"
-            android:textColor="@color/ut_std_text_gray_02"
-            android:includeFontPadding="false"/>
-        
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp">
-
-            <TextView
-                android:id="@+id/giftView_for_TextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
-                android:text="for"
-                android:textSize="20sp"
-                android:includeFontPadding="false"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:layout_marginBottom="20dp"
-                android:layout_marginLeft="5dp"
-                android:text="부모님"
-                android:textSize="20sp"
-                android:includeFontPadding="false"
-                android:layout_toRightOf="@id/giftView_for_TextView"
-                android:background="@drawable/btn_giftfindbg_roundrect_default" />
-
-        </RelativeLayout>
-
 
     </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/giftView_relationTag_RelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@id/giftView_textContainer_LinearLayout"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/giftView_for_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="for"
+            app:font="relation_font"
+            android:textSize="14dp"
+            android:includeFontPadding="false"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginLeft="5dp"
+            android:text="부모님"
+            android:textSize="14dp"
+            android:textColor="@color/ut_std_text_gray_03"
+            android:includeFontPadding="false"
+            android:layout_toRightOf="@id/giftView_for_TextView"
+            android:background="@drawable/btn_giftfindbg_roundrect_default" />
+
+    </RelativeLayout>
 </RelativeLayout>
