@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_tagContainer_LinearLayout"
+    android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:layout_marginRight="12dp">
+
+    <TextView
+        android:id="@+id/item_tag_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:text="@string/app_name"
+        android:textColor="#797979"
+        android:textSize="14dp"
+        android:background="#EEEEEE"
+        android:includeFontPadding="false"/>
+</LinearLayout>

@@ -10,11 +10,10 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.RelativeLayout;
 
-import com.rudolphriding.giftfriend.app.friend.FriendFragment;
+
 import com.rudolphriding.giftfriend.base.BaseActivity;
-import com.rudolphriding.giftfriend.app.home.HomeFragment;
 import com.rudolphriding.giftfriend.R;
-import com.rudolphriding.giftfriend.app.trend.TrendFragment;
+
 
 public class MainActivity extends BaseActivity
 {
