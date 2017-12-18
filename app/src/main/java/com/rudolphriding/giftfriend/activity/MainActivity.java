@@ -1,5 +1,6 @@
 package com.rudolphriding.giftfriend.activity;
 
+import android.content.Intent;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
@@ -7,6 +8,7 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.RelativeLayout;
 
@@ -22,6 +24,7 @@ public class MainActivity extends BaseActivity
     DrawerLayout drawerLayout;
     View friendDrawer;
     ImageButton menuButton;
+    Button loginButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -38,6 +41,7 @@ public class MainActivity extends BaseActivity
         friendDrawer = (View) findViewById(R.id.drawer);
         drawerLayout = (DrawerLayout) findViewById(R.id.activity_main);
         menuButton = (ImageButton) findViewById(R.id.actionbar_button_menu);
+        loginButton = (Button) findViewById(R.id.sideMenu_login_Button);
 
         //set MainPagerAdapter
         viewPager = (ViewPager) findViewById(R.id.activity_main_veiwpager);
@@ -59,6 +63,14 @@ public class MainActivity extends BaseActivity
             @Override
             public void onTabReselected(TabLayout.Tab tab) {
 
+            }
+        });
+
+        loginButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+                startActivity(intent);
             }
         });
 

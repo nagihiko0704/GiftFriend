@@ -6,4 +6,17 @@
         <sub>11</sub>
     </string>
     <string name="long_string">1231132131321321321321321321321321321321321321321321321323213213213213213213213213213213213213123131321464567426172676271672117261762dsfjhfasdoalweiufjal;dkfja;sldkfjaienmvlkn2132</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">아이디/Identification</string>
+    <string name="prompt_password">비밀번호/Password</string>
+    <string name="action_sign_in">로그인</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
 </resources>

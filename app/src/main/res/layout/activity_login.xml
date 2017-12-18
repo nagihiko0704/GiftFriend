@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rudolphriding.giftfriend.activity.LoginActivity">
+
+    <include
+        android:id="@+id/activity_login_actionBar"
+        layout="@layout/item_main_actionbar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/activity_login_actionBar">
+
+        <TextView
+            android:id="@+id/login_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:layout_centerHorizontal="true"
+            android:text="오늘도 함께해요!"
+            android:textSize="30dp"
+            android:textStyle="bold"/>
+
+        <!-- login form -->
+
+        <RelativeLayout
+            android:id="@+id/login_loginForm_RelativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_textView">
+
+            <EditText
+                android:id="@+id/login_email_EditText"
+                android:inputType="textEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:paddingLeft="10dp"
+                android:layout_centerHorizontal="true"
+                android:hint="@string/prompt_email"
+                android:background="@drawable/bgline_friendmemo_gray_01" />
+
+            <Space
+                android:id="@+id/login_space"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_below="@id/login_email_EditText"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:inputType="textPassword"
+                android:layout_height="50dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:paddingLeft="10dp"
+                android:layout_below="@id/login_space"
+                android:layout_centerHorizontal="true"
+                android:hint="@string/prompt_password"
+                android:background="@drawable/bgline_friendmemo_gray_01"/>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/login_signIn_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@+id/login_loginForm_RelativeLayout"
+            android:layout_centerHorizontal="true"
+            android:text="@string/action_sign_in" />
+
+        <TextView
+            android:id="@+id/login_other_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="계정연결하여 로그인하기"
+            android:layout_below="@+id/login_signIn_button"
+            android:layout_centerHorizontal="true" />
+
+        <LinearLayout
+            android:id="@+id/login_snsContainer_LinearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            android:layout_below="@+id/login_other_textView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_marginRight="5dp"/>
+
+            <Button
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"/>
+
+            <Button
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_snsContainer_LinearLayout"
+            android:layout_centerHorizontal="true">
+            
+            <Button
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="3dp"
+                android:text="회원가입"/>
+
+            <Button
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="3dp"
+                android:text="아이디/패스워드 찾기"/>
+            
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

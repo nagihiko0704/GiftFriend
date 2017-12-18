@@ -78,7 +78,7 @@
                     <TableRow>
 
                         <LinearLayout
-                            android:orientation="vertical"
+                            android:orientation="horizontal"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1">
@@ -94,23 +94,27 @@
                                 android:includeFontPadding="false"
                                 android:gravity="center_vertical"/>
 
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:text="선물 스토리 제목"
-                                android:textStyle="bold"
-                                android:textSize="16dp"
-                                android:textColor="#262626"
-                                android:includeFontPadding="false"
-                                android:gravity="center_vertical"/>
+
 
                         </LinearLayout>
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="선물 스토리 제목"
+                            android:textStyle="bold"
+                            android:textSize="16dp"
+                            android:textColor="#262626"
+                            android:includeFontPadding="false"
+                            android:gravity="center_vertical"/>
 
                         <ImageButton
-                            android:layout_height="48dp"
-                            android:layout_width="48dp"
-                            android:padding="12dp"
+                            android:layout_height="24dp"
+                            android:layout_width="36dp"
+                            android:paddingLeft="12dp"
                             android:src="@drawable/ic_heart_selector"
                             android:scaleType="centerInside"
                             android:background="#00000000"/>

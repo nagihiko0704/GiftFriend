@@ -59,15 +59,11 @@
             </TableRow>
 
             <TableRow>
-                <Space
-                    android:layout_height="50dp"
-                    android:layout_width="95dp"/>
-
-                <ListView
-                    android:layout_height="wrap_content"
-                    android:layout_width="match_parent">
-
-                </ListView>
+                <Button
+                    android:id="@+id/sideMenu_login_Button"
+                    android:layout_height="100dp"
+                    android:layout_width="60dp"
+                    android:text="login"/>
 
             </TableRow>
         </TableLayout>
